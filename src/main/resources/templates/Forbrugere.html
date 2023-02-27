@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <title>Forbrugere</title>
+    <!-- Thymeleaf Spring css-->
+    <link th:href="@{/css/Forbrugere.css}" rel="stylesheet"/>
+    <!-- Local html css-->
+    <link href="../static/Forbrugere.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- skrifttype til mulighederne-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
+    <section class="header">
+        <nav>
+            <!-- klikke på logoet-->
+            <a href="Madspild.html"><img src="/static/zpictures/dklogo.jpg"></a>
+            <div class="nav-button">
+                <!-- liste-->
+                <ul>
+                    <!-- klikke på linket-->
+                    <button class="dropbtn">
+                        <li> <a href="Madspild.html">Home</a></li>
+                    </button>
+
+                    <button class="dropbtn5">
+                        <li> <a href="">Kontakt os</a></li>
+                    </button>
+
+                    <button class="dropbtn6">
+                        <li> <a href="">Om os</a></li>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+    </section>
 
 </body>
 </html>
