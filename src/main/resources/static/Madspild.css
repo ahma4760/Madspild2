@@ -1,0 +1,295 @@
+/**/
+*{
+    margin: 0;
+    padding: 0;
+    /*skrift type til mulighederne*/
+    font-family: 'Poppins', sans-serif;
+}
+/*baggrundsbillede*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(/static/pictures/zerowaste.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*mellemrum til links*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* fix logo size*/
+nav img{
+    width: 150px;
+}
+/*optage al pladsen i rækken "flex"*/
+.nav-button{
+    flex: 1;
+    text-align: right;
+}
+/*list*/
+.nav-button ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-button ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*box under muligheder*/
+.nav-button ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightblue;
+    display: block;
+    margin: auto;
+    /*hover effekt transition*/
+    /*transition: 0.5s;*/
+}
+/*hover virker ikke
+.nav-links ul li:hover::after{
+    width: 100%;
+}*/
+.dropbtn{
+    background-color: orange;
+    color:white;
+    /*ramme*/
+    border: none;
+    /*pegefinger*/
+    cursor:pointer;
+}
+.dropbtn2 {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn3{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn4{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn5{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn6{
+    background-color: orange;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.dropbtn{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn2{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn3{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn4{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn5{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn6{
+    position: relative;
+    display: inline-block;
+}
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 68px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown2 {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown3{
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 124px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown4 {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 133px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown5 {
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 99px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown6{
+    display: none;
+    position: absolute;
+    background-color: orange;
+    min-width: 73px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdow2 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown3 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown4 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown5 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown6 a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover{
+    background-color: orange;
+}
+.dropdown2 a:hover{
+    background-color: orange;
+}
+.dropdown3 a:hover{
+    background-color: orange;
+}
+.dropdown4 a:hover{
+    background-color: orange;
+}
+.dropdown5 a:hover{
+    background-color: orange;
+}
+.dropdown6 a:hover{
+    background-color: orange;
+}
+
+.dropbtn:hover .dropdown{
+    display: block;
+}
+.dropbtn2:hover .dropdown2{
+    display: block;
+}
+.dropbtn3:hover .dropdown3{
+    display: block;
+}
+.dropbtn4:hover .dropdown4{
+    display: block;
+}
+.dropbtn5:hover .dropdown5{
+    display: block;
+}
+.dropbtn6:hover .dropdown6{
+    display: block;
+}
+
+.dropbtn:hover .dropdown{
+    background-color: orange;
+}
+.dropbtn2:hover .dropdown2{
+    background-color: orange;
+}
+.dropbtn3:hover .dropdown3{
+    background-color: orange;
+}
+.dropbtn4:hover .dropdown4{
+    background-color: orange;
+}
+.dropbtn5:hover .dropdown5{
+    background-color: orange;
+}
+.dropbtn6:hover .dropdown6{
+    background-color: orange;
+}
+.text{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text h1{
+    font-size: 62px;
+}
+.text p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:white;
+}
+.buttonfmh{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orange;
+    font-size: 40px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.buttonfmh:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+}
