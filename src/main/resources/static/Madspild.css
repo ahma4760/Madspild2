@@ -97,6 +97,7 @@ nav img{
     background-color: orange;
 }
 .dropbtn6:hover .dropdown6{
+
     display: block;
     background-color: orange;
 }*/
@@ -277,4 +278,21 @@ h2{
 }
 .column3{
     text-align: justify;
+}
+.container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    /*16:9 aspect*/
+    padding-top: 56.25%;
+}
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }

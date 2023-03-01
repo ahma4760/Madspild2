@@ -78,6 +78,128 @@ nav img{
     border:none;
     cursor: pointer;
 }
+/*10 px fra top, 0 fra højre og venstre, 40px fra bunden*/
+/*giver str - forhindre madspild her*/
+/*.try{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}*/
+/*optage al pladsen i rækken "flex" + mulighederne placeres i midten under fmh/forhindre madspild her*/
+.try-button{
+    flex: 1;
+    text-align: center;
+    width: 90%;
+    color: white;
+    position: absolute;
+    top:17.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/*gør knapperne til mulighederne smukke*/
+.try-button ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+/*forhindre madspild her - str og farve*/
+.try-button ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+/*box under muligheder*/
+.try-button ul li::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightblue;
+    display: block;
+    margin: auto;
+    /*hover effekt transition*/
+    /*transition: 0.5s;*/
+}
+/**/
+/*.dropbtn2 {
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn3{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn4{
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}*/
+/*.dropbtn2{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn3{
+    position: relative;
+    display: inline-block;
+}
+.dropbtn4{
+    position: relative;
+    display: inline-block;
+}*/
+/*giver mulighederne forbruger virksomhed og organisation gennemsigtighed og fed detalje*/
+.dropbtn2{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orange;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+/*hover bruges til at langsomt vise farve (detaljen)*/
+.dropbtn2:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+}
+.dropbtn3{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orange;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.dropbtn3:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+}
+.dropbtn4{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid orange;
+    font-size: 10px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.dropbtn4:hover{
+    border: 1px solid orange;
+    background: orange;
+    transition: 1s;
+}
 
 /*.dropbtn{
     position: relative;
@@ -159,4 +281,46 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+}
+/*Streg for markering "lightblue" */
+h3::after {
+    content: "";
+    width: 52%;
+    height: 2px;
+    background: lightblue;
+    display: block;
+    margin: auto;
+}
+/*værd at vide om madspild - */
+.vide{
+    width: 80%;
+    /*placering*/
+    margin: auto;
+    text-align: center;
+    /*afstand fra billede slut til h2 start */
+    padding-top: 20px;
+}
+/*str og tekstens fedme*/
+h2{
+    font-size: 36px;
+    font-weight: 600;
+}
+/**/
+.row{
+    /*afstand fra værd at vide til text-start*/
+    margin-top: 2%;
+    /*orden*/
+    display: flex;
+    /*god mellemrum til de tre kolonner*/
+    justify-content: space-between;
+    text-align: center;
+}
+.column{
+    text-align: justify;
+}
+.column2{
+    text-align: justify;
+}
+.column3{
+    text-align: justify;
 }
